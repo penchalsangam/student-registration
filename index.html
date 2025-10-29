@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Ganesh Computer Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="qualification">Qualification</label>
+            <input type="text" id="qualification" name="qualification">
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Select Course--</option>
+                <option value="Java">Java</option>
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="Python">Python</option>
+                <option value="Python Full Stack">Python Full Stack</option>
+                <option value="C Language">C Language</option>
+                <option value="C++">C++</option>
+                <option value="Data Structure">Data Structure</option>
+                <option value="MS Office">MS Office</option>
+                <option value="Tally Prime">Tally Prime</option>
+                <option value="Tally ERP">Tally ERP</option>
+                <option value="Adv Excel">Adv.Excel</option>
+                <option value="Photoshop">Photoshop</option>
+                <option value="Graphic Design">Graphic Design (DTP)</option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI Full Stack">UI Full Stack</option>
+
+            </select>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="message">Message / Notes:</label>
+            <textarea id="message" name="message" placeholder="Optional"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="successMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
